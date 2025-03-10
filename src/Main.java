@@ -20,7 +20,7 @@ public class Main {
         do {
             System.out.println("Unesite putanju do originalne datoteke:");
 
-            putanja = s.nextLine().replace("\\", "\\\\");
+           putanja = s.nextLine();
             lokacija = putanja.substring(0,putanja.lastIndexOf("\\")+1);
 
             try {
@@ -40,7 +40,7 @@ public class Main {
         do {
             System.out.println("Unesite naziv kopirane datoteke:");
              outputString = s.nextLine().trim();
-          //  outputString = outputString.replace("\\", "\\\\");
+
             outputString = lokacija + outputString;
             if (outputString.endsWith(".pdf")){
                 exit = true;
